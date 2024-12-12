@@ -25,7 +25,7 @@ struct Args {
     remove_temporary: bool,
 
     /// A value from 0 to 1 dictating where in the video the shuffle process starts.
-    #[arg(short, long)]
+    #[arg(short, long, default_value("0.0"))]
     shuffle_start_fraction: f32,
 }
 
